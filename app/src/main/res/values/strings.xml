@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">ProyectoBank</string>
+
+    <string name="login_title">Iniciar sesión</string>
+    <string name="login_subtitle">Ingresa con tu número de documento y contraseña</string>
+    <string name="label_document_number">Número de documento</string>
+    <string name="label_password">Contraseña</string>
+    <string name="button_login">Ingresar</string>
+    <string name="login_no_account">¿No tienes cuenta? Regístrate</string>
+    <string name="error_empty_fields">Completa todos los campos</string>
+    <string name="error_invalid_document">El documento solo debe contener números</string>
+    <string name="error_invalid_credentials">Documento o contraseña incorrectos</string>
+    <string name="pantalla_sin_crear">pantalla sin crear</string>
 </resources>
