@@ -1,4 +1,4 @@
-package com.example.proyectobank.ui.theme
+package com.example.proyectobank.presentation.theme
 
 import android.app.Activity
 import android.os.Build
