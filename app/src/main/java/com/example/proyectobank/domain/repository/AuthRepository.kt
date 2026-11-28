@@ -13,7 +13,7 @@ interface AuthRepository {
     )
 
     fun login(
-        email: String,
+        documentNumber: String,
         password: String,
         onSuccess: (User) -> Unit,
         onFailure: (Exception) -> Unit

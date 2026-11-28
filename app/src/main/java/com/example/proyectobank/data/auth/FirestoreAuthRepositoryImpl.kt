@@ -27,12 +27,12 @@ class FirestoreAuthRepositoryImpl(
         onFailure: (Exception) -> Unit
     ) {
         usersCollection
-            .whereEqualTo("email", user.email)
+            .whereEqualTo("documentNumber", user.documentNumber)
             .limit(1)
             .get()
             .addOnSuccessListener { snapshot ->
                 if (!snapshot.isEmpty) {
-                    onFailure(AuthException("Ese correo ya está registrado"))
+                    onFailure(AuthException("Ese documento ya está registrado"))
                     return@addOnSuccessListener
                 }
 
@@ -61,13 +61,13 @@ class FirestoreAuthRepositoryImpl(
     }
 
     override fun login(
-        email: String,
+        documentNumber: String,
         password: String,
         onSuccess: (User) -> Unit,
         onFailure: (Exception) -> Unit
     ) {
         usersCollection
-            .whereEqualTo("email", email)
+            .whereEqualTo("documentNumber", documentNumber)
             .limit(1)
             .get()
             .addOnSuccessListener { snapshot ->
@@ -75,7 +75,7 @@ class FirestoreAuthRepositoryImpl(
                 val storedHash = document?.getString("passwordHash")
 
                 if (document == null || storedHash == null || storedHash != PasswordHasher.hash(password)) {
-                    onFailure(AuthException("Correo o contraseña incorrectos"))
+                    onFailure(AuthException("Documento o contraseña incorrectos"))
                     return@addOnSuccessListener
                 }
 
