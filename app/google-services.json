@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "923351431558",
+    "firebase_url": "https://proyectobank-e853b-default-rtdb.firebaseio.com",
+    "project_id": "proyectobank-e853b",
+    "storage_bucket": "proyectobank-e853b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923351431558:android:22ae1804ac8e1cbfbd5407",
+        "android_client_info": {
+          "package_name": "com.example.proyectobank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACLon8NwnK5NEn_-S7jC-YR0mKGa46duI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

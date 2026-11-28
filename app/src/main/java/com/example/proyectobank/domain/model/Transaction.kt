@@ -1,6 +1,5 @@
 package com.example.proyectobank.domain.model
 
-// TODO: adjust fields to the Firestore schema defined by the team
 data class Transaction(
     val id: String = "",
     val originAccountNumber: String = "",
